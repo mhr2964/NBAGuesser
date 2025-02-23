@@ -9,7 +9,7 @@ const setupButton = () => {
         let curr = await (await fetch("/playerRandom")).json();
         document.body.appendChild(headshot.toImg(curr.playerId, 1));
         console.log(curr);
-        let bruh = await (await fetch("https://nba-guesser-49c1025fdf9a.herokuapp.com/playerInfo" + `?id=${curr.playerId}`)).json();
+        let bruh = await (await fetch("/playerInfo" + `?id=${curr.playerId}`)).json();
         console.log(bruh);
     }
 };
