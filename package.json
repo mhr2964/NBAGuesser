@@ -2,9 +2,14 @@
   "name": "nbaguesser",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint ./client --fix ./server --fix",
+    "nodemon": "nodemon --watch ./server --watch ./views ./server/app.js",
+    "start": "node server/app.js",
+    "webpack": "webpack",
+    "heroku-postbuild": "webpack",
+    "reset": "webpack && nodemon"
   },
   "repository": {
     "type": "git",

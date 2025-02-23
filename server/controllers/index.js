@@ -1,4 +1,4 @@
-const index = require('./main.js').hostMain;
+const index = require('./main.js').main;
 const NBA = require('./nbaAPI.js');
 
 const notFound = (req, res) => {
