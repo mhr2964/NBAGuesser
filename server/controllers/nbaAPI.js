@@ -23,6 +23,7 @@ const getPlayerProfile = (req, res) => {
 };
 
 const getPlayerInfo = (req, res) => {
+    console.log()
   const param = { PlayerID: req.query.id };
   NBA.stats.playerInfo(param).then((obj) => { console.log(obj); res.json(obj); });
 };
