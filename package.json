@@ -2,11 +2,11 @@
   "name": "nbaguesser",
   "version": "1.0.0",
   "description": "",
-  "main": "server/app.js",
+  "main": "./server/app.js",
   "scripts": {
     "test": "eslint ./client --fix ./server --fix",
-    "nodemon": "nodemon --watch ./server --watch ./views ./server/app.js",
-    "start": "node server/app.js",
+    "nodemon": "nodemon --watch ./server --watch ./views --watch ./hosted ./server/app.js",
+    "start": "node ./server/app.js",
     "webpack": "webpack",
     "heroku-postbuild": "webpack",
     "reset": "webpack && nodemon"
