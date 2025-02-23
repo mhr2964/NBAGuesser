@@ -20,7 +20,7 @@ app.engine('handlebars', expressHandlebars.engine({
 app.set('view engine', 'handlebars');
 app.set('views', `${__dirname}/../views`);
 router(app);
-app.listen(port, (err) => {
+app.listen(port, "0.0.0.0", (err) => {
   if (err) {
     throw err;
   }
