@@ -19,6 +19,7 @@ const getRandomPlayer = (req, res) => {
 };
 
 const getPlayerProfile = (req, res) => {
+    console.log("Profile");
   const param = { PlayerID: req.query.id };
   NBA.stats.playerProfile(param).then((obj) => res.json(obj));
 };
