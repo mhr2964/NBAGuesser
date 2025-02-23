@@ -14,6 +14,7 @@ const playerIdFromName = (name) => {
 
 const getRandomPlayer = (req, res) => {
   const index = Math.floor(Math.random() * players.length);
+  console.log("Random");
   res.json(players[index]);
 };
 
